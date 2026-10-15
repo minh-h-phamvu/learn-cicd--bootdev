@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 		},
 		{
 			"Empty value ApiKey Authorization header",
-			http.Header{"Authorization": []string{"ApiKey "}},
+			http.Header{"Authorization": []string{"ApiKey"}},
 			"", ErrMalformedHeader,
 		},
 		{
